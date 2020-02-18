@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="interfaceprincipale" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Gui.LoginController">
+   <children>
+      <VBox fx:id="vboxinscription" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="407.0" style="-fx-background-color: #71B5FF;" styleClass="vbox" stylesheets="@login.css">
+         <children>
+            <Label fx:id="ti1" prefHeight="43.0" prefWidth="253.0" text="hello friend" translateX="100.0" translateY="200.0">
+               <font>
+                  <Font name="Harrington" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff9b0f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXButton fx:id="btnc1" buttonType="RAISED" onMouseClicked="#btnc1" prefHeight="13.0" prefWidth="148.0" ripplerFill="#e39910" styleClass="loginbtn" text="Sign in" translateX="140.0" translateY="350.0" />
+            <Label fx:id="ti2" prefHeight="35.0" prefWidth="193.0" text="etes vous nouveau?" translateX="10.0" translateY="250.0">
+               <font>
+                  <Font name="Bookman Old Style" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endY="0.1523809523809524">
+                     <stops>
+                        <Stop color="#ff9b0f" />
+                        <Stop color="#0c1017" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </VBox>
+      <Pane fx:id="paneinscription" prefHeight="684.0" prefWidth="400.0" style="-fx-background-color: #EDECEB;">
+         <children>
+            <JFXPasswordField fx:id="tipas" focusColor="#0c78e4" layoutX="39.0" layoutY="289.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="password" unFocusColor="#2c07fc" />
+            <JFXPasswordField fx:id="tipas3" focusColor="#0c78e4" layoutX="39.0" layoutY="317.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="resaisissez le password" unFocusColor="#2c07fc" />
+            <JFXTextField fx:id="tip" focusColor="#056ed7" layoutX="39.0" layoutY="198.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="prenom" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="tie" focusColor="#056ed7" layoutX="39.0" layoutY="229.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="email" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="tin" focusColor="#056ed7" layoutX="39.0" layoutY="165.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="nom" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="til2" focusColor="#056ed7" layoutX="39.0" layoutY="260.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="tir" focusColor="#056ed7" layoutX="39.0" layoutY="380.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="rue" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="tiv" focusColor="#056ed7" layoutX="39.0" layoutY="411.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="ville" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="titel" focusColor="#056ed7" layoutX="39.0" layoutY="347.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="telephone" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="tipay" focusColor="#056ed7" layoutX="39.0" layoutY="442.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="pays" unFocusColor="#0013f2" />
+            <Label fx:id="tititre" layoutX="146.0" layoutY="7.0" text="Sign up">
+               <textFill>
+                  <RadialGradient centerX="0.5277777777777778" centerY="0.580952380952381" focusAngle="66.5" focusDistance="0.7441860465116279" radius="0.6627906976744187">
+                     <stops>
+                        <Stop color="#f2bb08" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font name="Bookman Old Style Bold" size="24.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tinog" focusColor="#056ed7" layoutX="39.0" layoutY="481.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="nom organisation(facultatif)" unFocusColor="#0013f2" />
+            <JFXTextField fx:id="tidog" focusColor="#056ed7" layoutX="39.0" layoutY="514.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" promptText="login" style="-fx-background-color: #EBEAE6;" text="domaine(facultatif)" unFocusColor="#0013f2" />
+            <ImageView fx:id="profil" fitHeight="107.0" fitWidth="161.0" layoutX="217.0" layoutY="49.0" pickOnBounds="true" preserveRatio="true" />
+            <JFXButton fx:id="btni1" buttonType="RAISED" layoutX="67.0" layoutY="583.0" prefHeight="25.0" prefWidth="216.0" ripplerFill="#fcaa1d" styleClass="loginbtn" stylesheets="@login.css" text="save" />
+            <JFXButton fx:id="btni2" buttonType="RAISED" layoutX="120.0" layoutY="78.0" onMouseClicked="#profil" ripplerFill="#fcb529" styleClass="loginbtn" stylesheets="@login.css" text="charger profil" />
+            <JFXTextField fx:id="urlimage" focusColor="#056ed7" layoutX="39.0" layoutY="544.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="21.0" prefWidth="290.0" style="-fx-background-color: #EBEAE6;" text="url image" unFocusColor="#0013f2" />
+         </children>
+      </Pane>
+      <Pane fx:id="interfaceconnexion" layoutX="407.0" layoutY="74.0" prefHeight="549.0" prefWidth="384.0" style="-fx-background-color: #EDECEB;" stylesheets="@login.css">
+         <children>
+            <ImageView fx:id="lc1" fitHeight="150.0" fitWidth="200.0" layoutX="21.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lc2" layoutX="116.0" layoutY="44.0" stylesheets="@login.css" text="Help Humanity" textFill="#f2a203">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lc3" layoutX="116.0" layoutY="249.0" text="sign in to continue">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="tcl" focusColor="#056ed7" layoutX="50.0" layoutY="279.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="40.0" prefWidth="300.0" promptText="login" style="-fx-background-color: #EBEAE6;" styleClass="loginbtn" stylesheets="@login.css" unFocusColor="#0013f2" />
+            <JFXPasswordField fx:id="tcp" focusColor="#0c78e4" layoutX="50.0" layoutY="334.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" prefHeight="40.0" prefWidth="300.0" promptText="password" stylesheets="@login.css" unFocusColor="#2c07fc" />
+            <Label fx:id="mdpforgot" layoutX="234.0" layoutY="416.0" text="Mot de passe oublié?" textFill="#a4a0a0">
+               <font>
+                  <Font name="Bookman Old Style" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btncx" buttonType="RAISED" layoutX="96.0" layoutY="450.0" onMouseClicked="#btncx" prefHeight="35.0" prefWidth="208.0" ripplerFill="#e39910" styleClass="loginbtn" text="connexion" />
+            <ImageView fx:id="ic" fitHeight="150.0" fitWidth="200.0" layoutX="108.0" layoutY="99.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/icone-login-png-5.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fx:id="close" fitHeight="52.0" fitWidth="20.0" layoutX="776.0" layoutY="4.0" onMouseClicked="#closebtn" pickOnBounds="true" preserveRatio="true" styleClass="closebtn">
+         <image>
+            <Image url="@../images/close.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="vboxconnexion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="684.0" prefWidth="400.0" style="-fx-background-color: #71B5FF;" styleClass="vbox" stylesheets="@login.css">
+         <children>
+            <Label fx:id="tc1" prefHeight="43.0" prefWidth="253.0" text="Welcome Back" translateX="100.0" translateY="200.0">
+               <font>
+                  <Font name="Harrington" size="36.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#ff9b0f" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <JFXButton fx:id="btni" buttonType="RAISED" onMouseClicked="#btni" prefHeight="33.0" prefWidth="148.0" ripplerFill="#e39910" styleClass="loginbtn" text="Sign up" translateX="140.0" translateY="350.0" />
+            <Label fx:id="tc2" prefHeight="35.0" prefWidth="193.0" text="etes vous nouveau?" translateX="10.0" translateY="250.0">
+               <font>
+                  <Font name="Bookman Old Style" size="14.0" />
+               </font>
+               <textFill>
+                  <LinearGradient cycleMethod="REFLECT" endY="0.1523809523809524">
+                     <stops>
+                        <Stop color="#ff9b0f" />
+                        <Stop color="#0c1017" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
