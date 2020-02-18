@@ -2,6 +2,13 @@
     -fx-background-color: #333333;
 }
 .title1{
-    -fx-background-color: #ff6600;
+    -fx-background-color: #cc581b;
     
 }
+.btn {
+    
+    -fx-background-color: #2064ac;
+}
+
+    
+    .root { -fx-font-size: 26px; }

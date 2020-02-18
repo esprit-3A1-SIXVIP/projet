@@ -3,8 +3,22 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/SauvgardeBac2020/pidevsolidarite/src/FXMLDocumentController.java</file>
-            <file>file:/C:/SauvgardeBac2020/pidevsolidarite/src/FXMLDocument.fxml</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/gui/DetailController.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/gui/detail.fxml</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/nbproject/build-impl.xml</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/entite/stat.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/gui/Controller1.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/entite/Article.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/gui/FXMLDocument_1.fxml</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/nbproject/jfx-impl.xml</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/gui/detail.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/test/Test.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/entite/user.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/gui/NewFXMain.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/utils/DataBase.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/IService/IService.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/services/ServiceArticle.java</file>
+            <file>file:/C:/SauvgardeBac2020/projet/pidevsolidarite/src/edu/projet/css/style.css</file>
         </group>
     </open-files>
 </project-private>

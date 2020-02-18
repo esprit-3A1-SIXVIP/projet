@@ -6,6 +6,7 @@
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -14,9 +15,9 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="674.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.projet.gui.Controller1">
+<AnchorPane id="AnchorPane" prefHeight="696.0" prefWidth="1144.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.projet.gui.Controller1">
     <children>
-      <MenuBar fx:id="menuprc" layoutY="1.0" prefHeight="26.0" prefWidth="897.0">
+      <MenuBar fx:id="menuprc" prefHeight="26.0" prefWidth="938.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
         <menus>
             <Menu mnemonicParsing="false" text="samyra">
               <items>
@@ -50,32 +51,34 @@
             </Menu>
         </menus>
       </MenuBar>
-      <Pane blendMode="COLOR_BURN" layoutY="31.0" prefHeight="643.0" prefWidth="75.0" styleClass="sidebar" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="31.0">
-         <cursor>
-           
-         </cursor></Pane>
-      <Pane blendMode="MULTIPLY" layoutX="75.0" layoutY="31.0" prefHeight="66.0" prefWidth="824.0" styleClass="title1" stylesheets="@../css/style.css" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
+      <Pane prefHeight="642.0" prefWidth="120.0" styleClass="sidebar" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="30.0">
+         <children>
+            <ToggleButton fx:id="btntheme" layoutX="31.0" layoutY="24.0" mnemonicParsing="false" onAction="#charger" prefHeight="25.0" prefWidth="59.0" text="ToggleButton" />
+         </children>
+      </Pane>
+      <Pane blendMode="MULTIPLY" layoutX="75.0" layoutY="31.0" prefHeight="66.0" prefWidth="824.0" styleClass="title1" stylesheets="@../css/style.css" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
          <children>
             <Circle fill="#61e83c" layoutX="86.0" layoutY="35.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
-            <Text fx:id="txttitre" fill="WHITE" layoutX="106.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="251.7366943359375">
+            <Text fx:id="ajoutAr" fill="WHITE" layoutX="106.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="251.7366943359375">
                <font>
                   <Font name="Bell MT" size="18.0" />
                </font>
             </Text>
          </children>
       </Pane>
-      <Pane layoutX="75.0" layoutY="97.0" prefHeight="575.0" prefWidth="818.0">
+      <Pane fx:id="panecenter" layoutX="75.0" layoutY="97.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="599.0" prefWidth="1024.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="120.0" AnchorPane.topAnchor="97.0">
          <children>
-            <PieChart fx:id="typ1" layoutX="241.0" layoutY="80.0" prefHeight="247.0" prefWidth="316.0" />
-            <ImageView fitHeight="46.0" fitWidth="262.0" layoutX="601.0" pickOnBounds="true" preserveRatio="true">
+            <PieChart fx:id="typ1" layoutX="196.0" layoutY="144.0" prefHeight="286.0" prefWidth="462.0" />
+            <Pane layoutX="601.0" />
+            <ScrollPane fx:id="cnt1" layoutX="77.0" layoutY="73.0" prefHeight="472.0" prefWidth="890.0">
+               <content>
+                  <ListView fx:id="list1" editable="true" fixedCellSize="130.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="466.0" prefWidth="886.0" />
+               </content></ScrollPane>
+            <ImageView fitHeight="46.0" fitWidth="262.0" layoutX="786.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../css/icon.png" />
                </image>
             </ImageView>
-            <ScrollPane layoutX="38.0" layoutY="69.0" prefHeight="472.0" prefWidth="742.0">
-               <content>
-                  <ListView fx:id="list1" onKeyPressed="#initialize" prefHeight="468.0" prefWidth="740.0" />
-               </content></ScrollPane>
          </children>
          <cursor>
      
