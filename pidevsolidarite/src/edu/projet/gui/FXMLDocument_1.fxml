@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="674.0" prefWidth="899.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.projet.gui.Controller1">
+    <children>
+      <MenuBar fx:id="menuprc" layoutY="1.0" prefHeight="26.0" prefWidth="897.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="samyra">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="junior">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Close" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="lelouch">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Delete" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="soreilla">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="malek">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="medali">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+      <Pane blendMode="COLOR_BURN" layoutY="31.0" prefHeight="643.0" prefWidth="75.0" styleClass="sidebar" stylesheets="@../css/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="31.0">
+         <cursor>
+           
+         </cursor></Pane>
+      <Pane blendMode="MULTIPLY" layoutX="75.0" layoutY="31.0" prefHeight="66.0" prefWidth="824.0" styleClass="title1" stylesheets="@../css/style.css" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="31.0">
+         <children>
+            <Circle fill="#61e83c" layoutX="86.0" layoutY="35.0" radius="7.0" stroke="TRANSPARENT" strokeType="INSIDE" />
+            <Text fx:id="txttitre" fill="WHITE" layoutX="106.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="251.7366943359375">
+               <font>
+                  <Font name="Bell MT" size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <Pane layoutX="75.0" layoutY="97.0" prefHeight="575.0" prefWidth="818.0">
+         <children>
+            <PieChart fx:id="typ1" layoutX="241.0" layoutY="80.0" prefHeight="247.0" prefWidth="316.0" />
+            <ImageView fitHeight="46.0" fitWidth="262.0" layoutX="601.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../css/icon.png" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="38.0" layoutY="69.0" prefHeight="472.0" prefWidth="742.0">
+               <content>
+                  <ListView fx:id="list1" onKeyPressed="#initialize" prefHeight="468.0" prefWidth="740.0" />
+               </content></ScrollPane>
+         </children>
+         <cursor>
+     
+         </cursor>
+      </Pane>
+    </children>
+</AnchorPane>

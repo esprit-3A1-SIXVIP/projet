@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane id="AnchorPane" fx:id="stage1" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/11.0.1" fx:controller="edu.projet.gui.StartPageController">
+   <children>
+      <Label layoutX="127.0" layoutY="51.0" text="Nom" />
+      <Label layoutX="127.0" layoutY="86.0" text="Prenom" />
+      <TextField fx:id="txtnom" layoutX="193.0" layoutY="47.0" />
+      <TextField fx:id="txtprenom" layoutX="193.0" layoutY="82.0" />
+      <Button fx:id="btnvalider" layoutX="216.0" layoutY="175.0" mnemonicParsing="false" onAction="#login" text="Button" />
+   </children>
+</AnchorPane>
