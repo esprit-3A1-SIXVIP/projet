@@ -34,9 +34,9 @@ public class Test {
           p2.setDescription("dscriptionmodifier");
             ser.update(p2);
         //    ser.delete(p2);
-        //    ser.deletetar();
+          ser.deletetar();
            // List<Article> list = ser.readAll();
-            System.out.println(  ser.findid(66));
+           // System.out.println(  ser.findid(66));
             List<Integer> list1 = ser.readAllid();
      //   System.out.println(list1);
         } catch (SQLException ex) {

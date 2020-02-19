@@ -12,3 +12,6 @@
 
     
     .root { -fx-font-size: 26px; }
+    .nvscene{
+        -fx-background-color: #006699;
+    }

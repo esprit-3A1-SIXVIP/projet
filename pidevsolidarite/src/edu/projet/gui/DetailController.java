@@ -10,6 +10,8 @@ import edu.projet.services.ServiceArticle;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javafx.application.Application;
 import javafx.beans.property.IntegerProperty;
@@ -115,12 +117,18 @@ public class DetailController implements Initializable {
     */
     @FXML
     private void handleLink(ActionEvent actionEvent) {
-        final Application application = getApplication();
-        final Integer value = getValue();
-        if (application != null && value != null) {
-            final int val = getValue();
-            final String url = String.format("http://fr.wikipedia.org/wiki/%d (nombre)", val);
-            application.getHostServices().showDocument(url);
+        try {
+            ServiceArticle ser = new ServiceArticle();
+            
+            Article a1= null ;
+            int i=Integer.parseInt( numberLabel.getText());
+            String s1=descriptionLabel.getText();
+            String s2=otherLabel.getText();
+            a1=new Article(i, s2, s1, 1);
+            ser.delete(a1);
+            
+        } catch (SQLException ex) {
+            Logger.getLogger(DetailController.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
 

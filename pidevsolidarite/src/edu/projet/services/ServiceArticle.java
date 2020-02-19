@@ -17,6 +17,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -77,7 +79,7 @@ public class ServiceArticle implements IService<Article> {
     @Override
     public boolean deletetar() throws SQLException {
         ste = con.createStatement();
-        String requeteInsert = "delete from article ;";
+        String requeteInsert = "delete * from article ;";
         int rowsUpdated = ste.executeUpdate(requeteInsert);
         return rowsUpdated > 0;
     }
@@ -101,28 +103,60 @@ public class ServiceArticle implements IService<Article> {
     public stat readAlldon() throws SQLException {
           List<stat> l1 = new ArrayList<stat>();
         ste = con.createStatement();
-        String requeteInsert = "select * from `handshake`.`article` ;";
+        String requeteInsert = "select count(*) as cnt from `handshake`.`article` ;";
         ResultSet rs = ste.executeQuery(requeteInsert);
-        while (rs.next()) {
-            String titre = rs.getString("titre");
-            String des = rs.getString("descriptionArticle");
-            int id = rs.getInt(1);
-            int uid = rs.getInt(5);
-            stat s1 = new stat(id, titre, des, uid);
-            l1.add(s1);
-        }
+       int id =0;
         stat s1 = null;
+       while (rs.next()) {
+ 
+             id = rs.getInt("cnt");
+            
+           
+            
+        }
+         s1 = new stat(id);
         return s1;
+       
     }
 
     @Override
     public stat readAllaide() throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        ste = con.createStatement();
+         int id = 0;
+        String requeteInsert = "select count(*) as cnt from `handshake`.`aide` ;";
+        ResultSet rs = ste.executeQuery(requeteInsert);
+       stat s1 = null;
+       while (rs.next()) {
+ 
+             id = rs.getInt("cnt");
+            
+           
+            
+        }
+      
+         s1 = new stat(id);
+        return s1;
+       
     }
 
     @Override
     public stat readAllenement() throws SQLException {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+ ste = con.createStatement();
+         int id = 0;
+        String requeteInsert = "select count(*) as cnt from `handshake`.`evenement` ;";
+        ResultSet rs = ste.executeQuery(requeteInsert);
+       stat s1 = null;
+       while (rs.next()) {
+ 
+             id = rs.getInt("cnt");
+            
+           
+            
+        }
+         s1 = new stat(id);
+        return s1;
+       
+    
     }
 
     @Override
@@ -157,4 +191,53 @@ public class ServiceArticle implements IService<Article> {
         return l1;
 
     }
+
+    public stat readAllbenef() {
+       stat s1 = null;
+        try {
+            try {
+                ste = con.createStatement();
+            } catch (SQLException ex) {
+                Logger.getLogger(ServiceArticle.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            int id = 0;
+            String requeteInsert = "select count(*) as cnt from `handshake`.`beneficiaire` ;";
+            ResultSet rs = ste.executeQuery(requeteInsert);
+           
+            
+            while (rs.next()) {
+                
+                id = rs.getInt("cnt");
+                
+                
+                
+            }
+            s1 = new stat(id);
+            return s1;
+        } catch (SQLException ex) {
+            Logger.getLogger(ServiceArticle.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+         return s1;
+           }
+
+//    public stat readAlldon1() {
+//        try {
+//            List<stat> l1 = new ArrayList<stat>();
+//            ste = con.createStatement();
+//            String requeteInsert = "select user.nom,don.montantDon from don inner join user on don.userid=user.id   ;";
+//            ResultSet rs = ste.executeQuery(requeteInsert);
+//            while (rs.next()) {
+//                String titre = rs.getString("titre");
+//                String des = rs.getString("descriptionArticle");
+//                int id = rs.getInt(1);
+//                int uid = rs.getInt(5);
+//                stat a1 = new stat(id, titre, des, uid);
+//                l1.add(a1);
+//            }
+//            return (stat) l1;
+//        } catch (SQLException ex) {
+//            Logger.getLogger(ServiceArticle.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
 }
