@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="643.0" prefWidth="722.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pidev.Test.Interface.AjouterAideController">
+   <children>
+      <Label layoutX="48.0" layoutY="55.0" text="Description" />
+      <Label layoutX="48.0" layoutY="80.0" text="Localisation" />
+      <Label layoutX="48.0" layoutY="105.0" text="Categorie" />
+      <TextField fx:id="descriptionAide" layoutX="162.0" layoutY="52.0" />
+      <TextField fx:id="localisationAide" layoutX="162.0" layoutY="76.0" />
+      <TextField fx:id="categorieAide" layoutX="162.0" layoutY="100.0" />
+      <Button fx:id="AjouterAide" layoutX="135.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#AjouterAide" text="Ajouter" />
+      <TableView fx:id="AffichageTabAide" layoutX="26.0" layoutY="387.0" prefHeight="166.0" prefWidth="658.0">
+         <columns>
+            <TableColumn fx:id="idtab" prefWidth="37.0" text="Id" />
+            <TableColumn fx:id="descriptiontab" onEditCommit="#Change_Description" prefWidth="159.0" text="Description" />
+            <TableColumn fx:id="localisationtab" onEditCommit="#Change_Localisation" prefWidth="163.0" text="Localisation" />
+            <TableColumn fx:id="categorietab" minWidth="0.0" onEditCommit="#Change_Categorie" prefWidth="169.0" text="Categorie" />
+         </columns>
+      </TableView>
+      <Button fx:id="Supprimer" layoutX="587.0" layoutY="341.0" mnemonicParsing="false" onAction="#ButtonSupprimer" text="Supprimer" />
+      <TextField fx:id="recherche" layoutX="399.0" layoutY="341.0" />
+      <Label layoutX="121.0" layoutY="26.0" text="Ajouter Aide" />
+   </children>
+</AnchorPane>
