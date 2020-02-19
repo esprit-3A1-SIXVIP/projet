@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.GUI.AddevenementController">
+    <stylesheets>
+        <URL value="@addevenement.fxml.css" />
+    </stylesheets>
+   <children>
+      <Pane prefHeight="400.0" prefWidth="133.0" style="-fx-background-color: #FC7F3C;">
+         <children>
+            <JFXButton fx:id="btnE" layoutY="31.0" onAction="#toGOespace" prefHeight="67.0" prefWidth="133.0" text="Espace évènement" textFill="#006d80">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="btnSp" layoutY="140.0" onAction="#vueSponsor" prefHeight="67.0" prefWidth="133.0" text="Sponsoring" textFill="#006d80">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+      <JFXTextField fx:id="txtportee" layoutX="203.0" layoutY="275.0" prefHeight="25.0" prefWidth="174.0" promptText="Portée de l'évènement" />
+      <JFXTextField fx:id="txtlieu" layoutX="455.0" layoutY="78.0" prefHeight="25.0" prefWidth="174.0" promptText="Lieu de l'évènement" />
+      <JFXTextField fx:id="txtprix" layoutX="455.0" layoutY="275.0" prefHeight="25.0" prefWidth="174.0" promptText="Prix de l'évènement" />
+      <Label layoutX="169.0" layoutY="14.0" prefHeight="28.0" prefWidth="201.0" text="Créer un évènement" textFill="#006d80">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtnom" layoutX="208.0" layoutY="78.0" prefHeight="25.0" prefWidth="174.0" promptText="Nom de l'évènement" />
+      <JFXDatePicker fx:id="dateP" layoutX="210.0" layoutY="162.0" prefHeight="28.0" prefWidth="215.0" promptText="Date de l'évènement" />
+      <JFXTimePicker fx:id="timeheure" layoutX="468.0" layoutY="162.0" prefHeight="28.0" prefWidth="215.0" promptText="Heure de l'évènement" />
+      <JFXButton fx:id="btn" layoutX="203.0" layoutY="349.0" onAction="#addEvent" prefHeight="25.0" prefWidth="81.0" style="-fx-background-color: #fffffff;" text="Enregistrer" />
+   </children>
+</AnchorPane>

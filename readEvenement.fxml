@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.GUI.ReadEvenementController">
+   <children>
+      <Pane prefHeight="406.0" prefWidth="134.0" style="-fx-background-color: #FC7F3C;">
+         <children>
+            <JFXButton fx:id="btnBack" layoutY="29.0" onAction="#back" prefHeight="63.0" prefWidth="134.0" text="Retour" textFill="#006d80" />
+         </children></Pane>
+      <TableView fx:id="table" layoutX="160.0" layoutY="92.0" prefHeight="223.0" prefWidth="607.0">
+        <columns>
+          <TableColumn fx:id="txtid" prefWidth="25.0" text="ID" />
+          <TableColumn fx:id="txtnom" prefWidth="135.0" text="Description" />
+            <TableColumn fx:id="txtlieu" prefWidth="88.0" text="Lieu" />
+            <TableColumn fx:id="dateP" prefWidth="90.0" text="Date" />
+            <TableColumn fx:id="timeP" prefWidth="85.0" text="Heure" />
+            <TableColumn fx:id="txtportee" prefWidth="97.0" text="Portée" />
+            <TableColumn fx:id="txtprix" prefWidth="86.0" text="Prix" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="280.0" layoutY="338.0" style="-fx-background-color: #fffffff;" text="Modifier" />
+      <JFXButton layoutX="497.0" layoutY="338.0" text="Supprimer" />
+      <Label layoutX="185.0" layoutY="22.0" text="Evenement" textFill="#006d80">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btn" layoutX="159.0" layoutY="60.0" onAction="#readEvent" style="-fx-background-color: #006D80;" text="Actualiser" />
+   </children>
+</AnchorPane>

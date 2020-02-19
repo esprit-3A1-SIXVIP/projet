@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.esprit.GUI.ViewevenementController">
+   <children>
+      <Pane prefHeight="408.0" prefWidth="135.0" style="-fx-background-color: #FC7F3C;">
+         <children>
+            <JFXButton fx:id="btnBack" layoutY="28.0" onAction="#back" prefHeight="67.0" prefWidth="135.0" text="Retour" textFill="#006d80" />
+         </children></Pane>
+      <Label layoutX="173.0" layoutY="30.0" text="Liste des sponsors" textFill="#006d80">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="table" layoutX="173.0" layoutY="122.0" prefHeight="200.0" prefWidth="530.0" style="-fx-background-color: #ffffff;">
+        <columns>
+          <TableColumn fx:id="txtnom" prefWidth="103.0" text="Nom " />
+          <TableColumn fx:id="txtpays" prefWidth="82.0" text="Pays" />
+            <TableColumn fx:id="txtville" prefWidth="96.0" text="Ville" />
+            <TableColumn fx:id="txtdomaine" prefWidth="99.0" text="Domaine" />
+            <TableColumn fx:id="txtemail" prefWidth="149.0" text="Email" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnEnvoyer" layoutX="173.0" layoutY="339.0" onAction="#goTo" text="Envoyer une demande de sponsorisation" />
+      <JFXButton fx:id="btnActualiser" layoutX="173.0" layoutY="80.0" onAction="#viewSponsor" style="-fx-background-color: #006d80;" text="Actualiser" />
+   </children>
+</AnchorPane>
